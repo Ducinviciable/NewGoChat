@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane fx:id="Anchor_Max" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="Border_Max" layoutX="1.0" prefHeight="600.0" prefWidth="800.0">
+         <left>
+            <HBox fx:id="HBox_Left" prefHeight="600.0" prefWidth="261.0" style="-fx-border-color: #00FFC1;" styleClass="Pane_Mess" stylesheets="@../../../CSS/Pane-Mess.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="VBox_ToolBar" prefHeight="592.0" prefWidth="70.0" styleClass="Pane_Toolbar" stylesheets="@../../../CSS/Toolbar.css">
+                     <children>
+                        <Pane fx:id="Pane_Toolbar" prefHeight="592.0" prefWidth="52.0" styleClass="Pane_Mess" stylesheets="@../../../CSS/Toolbar.css">
+                           <children>
+                              <ImageView fx:id="Img_Avatar" fitHeight="64.0" fitWidth="80.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../asset/Logo.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Pane fx:id="PTop" layoutX="-3.0" layoutY="344.0" prefHeight="200.0" prefWidth="72.0" />
+                              <Pane fx:id="PBot" layoutX="-4.0" layoutY="87.0" prefHeight="110.0" prefWidth="71.0" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <Pane fx:id="Pane_Mess" prefHeight="592.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="OL" layoutX="-2.0" layoutY="2.0" prefHeight="59.0" prefWidth="194.0" style="-fx-border-color: #E3E3E3;">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.8736842274665833" green="0.8736842274665833" blue="0.8736842274665833" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="Anchor_Right" prefHeight="600.0" prefWidth="572.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="Pane_Right" prefHeight="600.0" prefWidth="538.0" style="-fx-border-color: #00FFC1; -fx-border-width: 4px 4px 4px 0px;" styleClass="Pane-Right" stylesheets="@../../../CSS/Pane-mRight.css">
+                     <children>
+                        <Pane fx:id="Pane_Text" layoutY="3.0" prefHeight="61.0" prefWidth="533.0" style="-fx-background-color: #E3E3E3;">
+                           <effect>
+                              <DropShadow height="17.49" radius="7.952500000000001" width="16.32">
+                                 <color>
+                                    <Color red="0.9368420839309692" green="0.9056140184402466" blue="0.9056140184402466" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <AnchorPane layoutX="-3.0" prefHeight="64.0" prefWidth="537.0">
+                                 <children>
+                                    <Button fx:id="Btn_Only" layoutX="52.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#only" text="Friend Chat" />
+                                    <Button fx:id="Btn_Groups" layoutX="397.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#group" text="Create Chat" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </Pane>
+                     </children></Pane>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
